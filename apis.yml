@@ -1,7 +1,27 @@
 aid: levelten-energy
 name: LevelTen Energy
-description: LevelTen Energy is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: LevelTen Energy operates a two-sided digital marketplace and transaction platform for
+  carbon-free energy, describing itself as the transaction infrastructure for the energy transition.
+  Clean energy buyers, advisors, project developers, utilities and financiers use the LevelTen Energy
+  Marketplace to compare thousands of power purchase agreement (PPA) offers, run NPV and settlement
+  cashflow analysis, evaluate risk scenarios and track a Development Maturity Score across projects in
+  North America and Europe. The platform also covers granular certificates, hybrid and storage PPAs,
+  and performance monitoring, alongside market intelligence products including MarketPulse, the LevelTen
+  PPA Price Index and Market Transparency Reports. The marketplace is served by an authenticated API at
+  api.levelten.energy, which is gated behind marketplace login and publishes no public developer
+  documentation, SDKs or machine-readable specification at this time.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/5f9c624f18a34099c088258c/6053b1699e518e2ceaaf6a26_LTE_Webclip.png
 url: https://raw.githubusercontent.com/api-evangelist/levelten-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +31,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Energy
+- Renewable Energy
+- Power Purchase Agreements
+- Marketplace
+- Clean Energy
+- Market Intelligence
+- Sustainability
+- Carbon
+apis:
+- aid: levelten-energy:marketplace
+  name: LevelTen Energy Marketplace API
+  description: The authenticated API behind the LevelTen Energy Marketplace. The host at
+    api.levelten.energy self-identifies as "the API for LevelTen Energy" and directs callers to log in
+    at marketplace.levelten.energy. No public OpenAPI, developer portal, or API reference was found
+    during enrichment; access appears to be restricted to marketplace customers.
+  humanURL: https://marketplace.levelten.energy/login
+  baseURL: https://api.levelten.energy
+  tags:
+  - Energy
+  - Marketplace
+  - Power Purchase Agreements
+  properties:
+  - type: Login
+    url: https://marketplace.levelten.energy/login
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +66,22 @@ maintainers:
 common:
 - type: Website
   url: https://leveltenenergy.com/
+- type: Blog
+  url: https://www.leveltenenergy.com/blog
+- type: Login
+  url: https://marketplace.levelten.energy/login
+- type: Support
+  url: https://www.leveltenenergy.com/contact
+- type: TermsOfService
+  url: https://www.leveltenenergy.com/terms
+- type: PrivacyPolicy
+  url: https://www.leveltenenergy.com/privacy
+- type: LLMsTxt
+  url: llms/levelten-energy-llms.txt
+- type: DomainSecurity
+  url: security/levelten-energy-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
