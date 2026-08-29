@@ -10,6 +10,17 @@ description: LevelTen Energy operates a two-sided digital marketplace and transa
   PPA Price Index and Market Transparency Reports. The marketplace is served by an authenticated API at
   api.levelten.energy, which is gated behind marketplace login and publishes no public developer
   documentation, SDKs or machine-readable specification at this time.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
