@@ -64,25 +64,87 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LevelTen Energy operates a two-sided digital marketplace and transaction platform for carbon-free
-energy. Clean energy buyers, advisors, project developers, utilities and financiers use the LevelTen
-Energy Marketplace to compare power purchase agreement (PPA) offers, run NPV and settlement cashflow
-analysis, evaluate risk scenarios, and track projects across North America and Europe. The company also
-publishes market intelligence products including MarketPulse, the LevelTen PPA Price Index, and Market
-Transparency Reports.
+LevelTen Energy operates a two-sided digital marketplace and transaction platform for carbon-free energy, describing itself as the transaction infrastructure for the energy transition. Clean energy buyers, advisors, project developers, utilities and financiers use the LevelTen Energy Marketplace to compare thousands of power purchase agreement (PPA) offers, run NPV and settlement cashflow analysis, evaluate risk scenarios and track a Development Maturity Score across projects in North America and Europe. The platform also covers granular certificates, hybrid and storage PPAs, and performance monitoring, alongside market intelligence products including MarketPulse, the LevelTen PPA Price Index and Market Transparency Reports. The marketplace is served by an authenticated API at api.levelten.energy, which is gated behind marketplace login and publishes no public developer documentation, SDKs or machine-readable specification at this time.
 
-Backed by: techstars — https://leveltenenergy.com/
+**Areas:** Company · Energy · Renewable Energy · Power Purchase Agreements · Marketplace · Clean Energy · Market Intelligence · Sustainability · Carbon
 
-## API surface
+## LevelTen Energy on APIs.io
 
-LevelTen Energy runs an authenticated API at `https://api.levelten.energy`, which self-identifies as
-"the API for LevelTen Energy" and directs callers to log in at the marketplace. As of the 2026-07-19
-enrichment pass there is **no public developer portal, API reference, OpenAPI/GraphQL/AsyncAPI
-specification, SDK, package, CLI, MCP server, changelog, status page, or `/.well-known/` discovery
-document**. Enrichment is therefore limited to identity, link properties, and live security probes.
+Everything profiled for LevelTen Energy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/levelten-energy/](https://apis.io/providers/levelten-energy/)** — or go straight to one of the APIs or properties below.
 
-## Artifacts
+### APIs (1)
 
-- `security/levelten-energy-domain-security.yml` — TLS/HSTS/DNSSEC/CAA/SPF/DMARC probe
-- `well-known/levelten-energy-well-known.yml` — recorded `/.well-known/` and spec-discovery probe (0 found)
-- `llms/levelten-energy-llms.txt` — generated llms.txt
+- [LevelTen Energy Marketplace API](https://apis.io/apis/levelten-energy/marketplace/) — The authenticated API behind the LevelTen Energy Marketplace. The host at api.levelten.energy self-identifies as "the API for LevelTen Energy" and directs…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Levelten Energy Domain Security](https://apis.io/security/levelten-energy/levelten-energy-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://leveltenenergy.com/)
+- [Support](https://www.leveltenenergy.com/contact)
+- [Blog](https://www.leveltenenergy.com/blog)
+- [Terms of service](https://www.leveltenenergy.com/terms)
+- [Privacy policy](https://www.leveltenenergy.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 14.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 27.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.5** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/levelten-energy/](https://apis.io/providers/levelten-energy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LevelTen Energy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/levelten-energy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
